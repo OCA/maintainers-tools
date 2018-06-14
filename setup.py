@@ -72,6 +72,7 @@ setuptools.setup(
             'oca-pypi-upload = tools.pypi_upload:cli',
             'oca-dist-to-simple-index = tools.dist_to_simple_index:main',
             'oca-gen-addon-readme = tools.gen_addon_readme:gen_addon_readme',
+            'oca-configure-travis= tools.configure_travis:main',
         ],
     },
 )

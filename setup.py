@@ -75,6 +75,7 @@ setuptools.setup(
             'oca-create-migration-issue = tools.create_migration_issue:main',
             'oca-update-pre-commit-excluded-addons = '
             'tools.update_pre_commit_excluded_addons:main',
+            'oca-create-branch = tools.create_branch:main',
         ],
     },
 )

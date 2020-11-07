@@ -10,7 +10,7 @@ from .oca_projects import BranchNotFoundError, get_repositories, temporary_clone
 
 @click.command()
 @click.argument("branch")
-@click.argument("patch-file")
+@click.argument("patch-file", type=click.Path(exists=True, dir_okay=False))
 def main(branch, patch_file):
     patch_file = os.path.abspath(patch_file)
     for repo in get_repositories():
